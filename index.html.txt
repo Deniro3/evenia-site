@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événia - Agence événementielle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Événia</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h2>Créez l’inoubliable avec Événia</h2>
+        <p>Votre agence événementielle sur-mesure</p>
+    </section>
+
+    <section id="apropos" class="content">
+        <h2>À propos de nous</h2>
+        <p>Événia est une agence spécialisée dans la création et l’organisation d’événements d’exception. Notre mission : faire de chaque moment un souvenir mémorable.</p>
+    </section>
+
+    <section id="services" class="content">
+        <h2>Nos services</h2>
+        <ul>
+            <li>Organisation d'événements professionnels (séminaires, lancements de produit…)</li>
+            <li>Événements privés (mariages, anniversaires, fêtes à thème)</li>
+            <li>Décoration et scénographie</li>
+            <li>Prestations techniques (son, lumière, vidéo)</li>
+        </ul>
+    </section>
+
+    <section id="realisations" class="content">
+        <h2>Nos réalisations</h2>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/400x300/?event,party" alt="Événement 1">
+            <img src="https://source.unsplash.com/400x300/?wedding,celebration" alt="Événement 2">
+            <img src="https://source.unsplash.com/400x300/?conference,stage" alt="Événement 3">
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre e-mail" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Événia. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
