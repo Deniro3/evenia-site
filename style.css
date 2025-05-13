@@ -1,20 +1,23 @@
+/* Palette : violet, or, blanc cassé */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    background: #fdfcfb;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #222;
+    background: #6a0dad;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 nav ul {
@@ -22,25 +25,47 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #d4af37;
 }
 
 .hero {
-    background: url('https://source.unsplash.com/1600x600/?event,light') no-repeat center/cover;
+    background: url('https://source.unsplash.com/1600x600/?event,luxury') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
 section.content {
-    padding: 40px 20px;
+    padding: 60px 20px;
     max-width: 900px;
     margin: auto;
+}
+
+h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 .gallery {
@@ -54,34 +79,49 @@ section.content {
     width: 100%;
     max-width: 280px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
     max-width: 600px;
 }
 
+input, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
 button {
-    padding: 10px 20px;
-    background: #222;
-    color: white;
+    padding: 12px 25px;
+    background: #d4af37;
+    color: black;
     border: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 8px;
     cursor: pointer;
-    width: fit-content;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #c49e2e;
 }
 
 footer {
-    background: #222;
+    background: #6a0dad;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 40px;
 }
+
