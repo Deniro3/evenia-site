@@ -1,263 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Événia - Agence événementielle</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Événia - Agence Événementielle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #0b1d3a;
-      --accent: #b76e79;
-      --text: #333333;
-      --background: #ffffff;
-    }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: var(--background);
-      color: var(--text);
-      scroll-behavior: smooth;
+      background-color: #f7f7f7;
+      color: #333;
     }
+
     header {
-      background-color: var(--primary);
+      background-color: #0b1d3a;
       color: white;
-      padding: 20px 0;
+      padding: 60px 20px;
       text-align: center;
     }
+
     header h1 {
+      margin: 0;
       font-family: 'Playfair Display', serif;
       font-size: 3em;
-      margin: 0;
     }
+
     nav {
-      background-color: var(--accent);
-      padding: 10px 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+      background-color: #b76e79;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      padding: 15px 0;
     }
+
     nav a {
+      color: white;
+      margin: 0 20px;
       text-decoration: none;
-      color: white;
       font-weight: bold;
-      transition: color 0.3s;
+      font-size: 1.1em;
     }
-    nav a:hover {
-      color: var(--primary);
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?event') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-      position: relative;
-    }
-    .hero h2 {
-      font-size: 3em;
-      margin: 0;
-    }
-    .hero p {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
-    .hero .cta {
-      margin-top: 30px;
-    }
-    .cta-button {
-      background-color: var(--accent);
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .cta-button:hover {
-      background-color: #944f59;
-    }
+
     section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      color: var(--primary);
-      margin-bottom: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    .section-content {
+
+    .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
+      gap: 20px;
       justify-content: center;
     }
-    .section-content img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .section-text {
-      max-width: 500px;
-    }
-    .testimonial {
-      background-color: #f9f9f9;
-      border-left: 5px solid var(--accent);
-      padding: 20px;
-      margin: 20px 0;
-      font-style: italic;
-    }
-    .testimonial strong {
-      display: block;
-      margin-top: 10px;
-      font-style: normal;
-    }
-    .client-logos {
-      display: flex;
-      justify-content: space-around;
-      gap: 30px;
-      margin-top: 40px;
-    }
-    .client-logos img {
-      max-height: 50px;
-      filter: grayscale(100%);
-      transition: filter 0.3s;
-    }
-    .client-logos img:hover {
-      filter: grayscale(0);
-    }
-    .faq {
-      margin-top: 40px;
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .faq h3 {
-      font-size: 1.8em;
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
+
     footer {
-      background-color: var(--primary);
+      background-color: #0b1d3a;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Événia</h1>
+    <p>Créateurs d'événements inoubliables</p>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#realisations">Réalisations</a></li>
-      <li><a href="#temoignages">Témoignages</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="index.html">Accueil</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h2>Créez l’inoubliable avec Événia</h2>
-    <p>Des événements uniques, pensés pour vous</p>
-    <div class="cta">
-      <a href="#contact"><button class="cta-button">Demander un devis</button></a>
-    </div>
-  </section>
-
-  <section id="apropos">
-    <h2>À propos</h2>
-    <div class="section-content">
-      <div class="section-text">
-        <p>Événia est une agence spécialisée dans la création d’événements haut de gamme : mariages, galas, séminaires, anniversaires... Notre équipe passionnée transforme chaque idée en réalité sur-mesure.</p>
-      </div>
-      <img src="https://source.unsplash.com/500x350/?team,event" alt="Notre équipe">
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>Nos services</h2>
-    <div class="section-content">
-      <img src="https://source.unsplash.com/500x350/?wedding,event" alt="Services événementiels">
-      <div class="section-text">
-        <p>Nous offrons une gamme complète de services pour répondre à tous vos besoins événementiels, de la conception à la réalisation : décoration, coordination, logistique, animation et plus encore.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="realisations">
-    <h2>Réalisations</h2>
-    <div class="section-content">
-      <div class="section-text">
-        <p>Découvrez quelques-unes de nos réalisations les plus marquantes : soirées de lancement, mariages de prestige, galas privés... Chaque projet est une œuvre unique.</p>
-      </div>
-      <img src="https://source.unsplash.com/500x350/?luxury,event" alt="Événement de luxe">
-    </div>
-  </section>
-
-  <section id="temoignages">
-    <h2>Témoignages</h2>
-    <div class="testimonial">
-      "Un service exceptionnel ! Tout a été pensé dans les moindres détails. Merci Événia !"
-      <strong>— Sophie L.</strong>
-    </div>
-    <div class="testimonial">
-      "Professionnalisme, créativité et écoute. Notre gala a été un franc succès."
-      <strong>— Marc D.</strong>
-    </div>
-  </section>
-
-  <section id="faq">
-    <h2>FAQ</h2>
-    <div class="faq">
-      <h3>Quels types d’événements organisez-vous ?</h3>
-      <p>Nous organisons des événements variés tels que des mariages, des séminaires, des conférences, des anniversaires, des lancements de produits, etc.</p>
-    </div>
-    <div class="faq">
-      <h3>Proposez-vous des services sur-mesure ?</h3>
-      <p>Oui, nous concevons des événements 100% personnalisés en fonction de vos besoins et de votre budget.</p>
-    </div>
-    <div class="faq">
-      <h3>Comment puis-je réserver un événement avec Événia ?</h3>
-      <p>Vous pouvez nous contacter via notre formulaire en ligne ou par email pour discuter de votre projet et obtenir un devis personnalisé.</p>
-    </div>
-  </section>
-
-  <section id="clientlogos">
-    <h2>Nos clients</h2>
-    <div class="client-logos">
-      <img src="https://via.placeholder.com/150x50?text=Client+1" alt="Client 1" />
-      <img src="https://via.placeholder.com/150x50?text=Client+2" alt="Client 2" />
-      <img src="https://via.placeholder.com/150x50?text=Client+3" alt="Client 3" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="section-content">
-      <div class="section-text">
-        <p>Pour toute demande d'information ou de devis, n'hésitez pas à nous contacter à l'adresse <strong>contact@evenia.ch</strong> ou via nos réseaux sociaux.</p>
-      </div>
-      <img src="https://source.unsplash.com/500x350/?contact,office" alt="Contactez-nous">
+  <section>
+    <h2>Bienvenue chez Événia</h2>
+    <p>Votre partenaire pour des événements sur mesure, professionnels ou privés.</p>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?event" alt="Événement 1">
+      <img src="https://source.unsplash.com/400x300/?party" alt="Événement 2">
+      <img src="https://source.unsplash.com/400x300/?wedding" alt="Événement 3">
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Événia. Tous droits réservés.</p>
   </footer>
+
 </body>
 </html>
